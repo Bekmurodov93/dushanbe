@@ -45,6 +45,7 @@ class MainActivity : AppCompatActivity(){
                 navController.navigate(R.id.action_global_toLogin)
             }
         }
+
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when(destination.id){
                 R.id.homeFragment,R.id.loginFragment,R.id.localPatientsFragment -> {
@@ -57,6 +58,13 @@ class MainActivity : AppCompatActivity(){
         }
     }
     override fun onBackPressed() {
+
+        if (navController.currentDestination?.id == R.id.homeFragment){
+            if (viewModel.authToken.value.isNullOrEmpty() && viewModel.authToken.value != "default"){
+                return
+            }
+        }
+
         if (navController.currentDestination?.id == R.id.loginFragment) return
         super.onBackPressed()
     }

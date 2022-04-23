@@ -22,7 +22,9 @@ class DetailFragment : BaseFragment<DetailFragmentBinding, DetailViewModel>() {
 
     override fun setUpViews() {
         super.setUpViews()
-        (activity as MainActivity).setSupportActionBar(binding.toolbar)
+        binding.toolbar.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.action_global_toHome)
+        }
         binding.toolbar.title = ""
         val arg = arguments?.get("reg")
         val code = arguments?.getString("code","")?:""

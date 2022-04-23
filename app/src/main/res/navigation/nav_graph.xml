@@ -7,6 +7,9 @@
     <action
             android:id="@+id/action_global_toLogin"
             app:destination="@id/loginFragment" />
+    <action
+            android:id="@+id/action_global_toHome"
+            app:destination="@id/homeFragment" />
     <fragment
             android:id="@+id/homeFragment"
             android:name="com.example.patient.screens.home.HomeFragment"
