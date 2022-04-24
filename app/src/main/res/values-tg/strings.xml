@@ -103,5 +103,6 @@
     <string name="patients">Беморон</string>
     <string name="sync_succeeded">Данные успешно синхронизированы</string>
     <string name="search_hint">Поиск по ФИО, ID и номеру ...</string>
+    <string name="find_client">Ввод данных повторных пациентов</string>
 
 </resources>
