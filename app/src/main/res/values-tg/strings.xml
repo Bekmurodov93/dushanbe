@@ -101,8 +101,8 @@
     <string name="mismatch">Майдонҳо мувофиқат намекунанд</string>
     <string name="patient">Бемор</string>
     <string name="patients">Беморон</string>
-    <string name="sync_succeeded">Данные успешно синхронизированы</string>
+    <string name="sync_succeeded">Маълумот бомуваффақият ҳамоҳангсозии  карда шуд</string>
     <string name="search_hint">Поиск по ФИО, ID и номеру ...</string>
-    <string name="find_client">Ввод данных повторных пациентов</string>
+    <string name="find_client">Воридкунии беморони такрори</string>
 
 </resources>
