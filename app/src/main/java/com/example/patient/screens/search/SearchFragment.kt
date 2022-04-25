@@ -32,6 +32,7 @@ class SearchFragment : BaseFragment<SearchFragmentBinding, SearchViewModel>() {
     private val adapter = FilterAdapter(clicked = this::clicked)
     private var loading = false
     private var lastPage = false
+    private var isFilter = true
     private var offset = 0
     override fun setUpViews() {
         super.setUpViews()
@@ -42,21 +43,23 @@ class SearchFragment : BaseFragment<SearchFragmentBinding, SearchViewModel>() {
             requireContext(),
             LinearLayoutManager.VERTICAL, false
         )
-        binding.recycleView.layoutManager=layout
+        binding.recycleView.layoutManager = layout
 
         binding.recycleView.addOnScrollListener(object : PaginationScrollListener(layout) {
             override fun loadMoreItems() {
+                if (!isFilter ) return
                 loading = true
                 offset += 10
                 adapter.addLoadingFooter()
                 loadNextPage()
             }
+
             override val isLastPage: Boolean
                 get() = lastPage
             override val isLoading: Boolean
                 get() = loading
         })
-
+        if (!isFilter) return
         loadFirstPage()
 
         binding.filter.setOnClickListener {
@@ -66,9 +69,11 @@ class SearchFragment : BaseFragment<SearchFragmentBinding, SearchViewModel>() {
         binding.accept.setOnClickListener {
             loadFirstPage()
             closeFilter()
+            isFilter = true
         }
 
-        binding.searchInputLayout.setEndIconOnClickListener{
+        binding.searchInputLayout.setEndIconOnClickListener {
+            isFilter = false
             viewModel.getByIdPhone().observe(viewLifecycleOwner) {
                 adapter.resetAll(it.payload)
             }
@@ -106,20 +111,21 @@ class SearchFragment : BaseFragment<SearchFragmentBinding, SearchViewModel>() {
         }
 
     }
-    private fun clicked(model:RegisterModel){
+
+    private fun clicked(model: RegisterModel) {
         val details = Register()
-        details.infoBirthPermit=model.info_birthpermit
-        details.infoParity=model.info_parity?:-1
-        details.infoEstimatedDate=model.info_estimated_date?:""
-        details.infoMenstruation=model.info_menstruation?:""
-        details.birthday=model.birthdate
-        details.phoneEx=model.phone_ex?:""
-        details.address=model.address
-        details.passport=model.passport?:""
-        details.publishDate=model.publish_date?:""
-        details.fio=model.fio
-        details.type=model.hospital_type
-        val bundle= bundleOf()
+        details.infoBirthPermit = model.info_birthpermit
+        details.infoParity = model.info_parity ?: -1
+        details.infoEstimatedDate = model.info_estimated_date ?: ""
+        details.infoMenstruation = model.info_menstruation ?: ""
+        details.birthday = model.birthdate
+        details.phoneEx = model.phone_ex ?: ""
+        details.address = model.address
+        details.passport = model.passport ?: ""
+        details.publishDate = model.publish_date ?: ""
+        details.fio = model.fio
+        details.type = model.hospital_type
+        val bundle = bundleOf()
         bundle.putParcelable("reg", details)
         bundle.putString("code", model.code)
         Navigation.findNavController(requireView())
@@ -127,19 +133,24 @@ class SearchFragment : BaseFragment<SearchFragmentBinding, SearchViewModel>() {
     }
 
     private fun loadNextPage() {
+
         viewModel.getPatients(offset, 10).observe(viewLifecycleOwner) {
             adapter.removeLoadingFooter()
             loading = false
-            if (it.code == 200 || it.code == 201)
+            if (it.code == 200 || it.code == 201) {
                 adapter.addAll(it.payload)
-            else lastPage = true
+            }
+            lastPage = it.payload.isEmpty()
+
         }
     }
 
     private fun loadFirstPage() {
         viewModel.getPatientsInit(offset, 10).observe(viewLifecycleOwner) {
-            if (it.code == 200 || it.code == 201)
-                adapter.resetAll(it.payload)
+            if (it.code == 200 || it.code == 201) {
+                adapter.addAll(it.payload)
+            }
+            lastPage = it.payload.isEmpty()
         }
     }
 
