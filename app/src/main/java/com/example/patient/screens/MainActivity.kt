@@ -58,7 +58,6 @@ class MainActivity : AppCompatActivity(){
         }
     }
     override fun onBackPressed() {
-
         if (navController.currentDestination?.id == R.id.homeFragment){
             if (viewModel.authToken.value.isNullOrEmpty() && viewModel.authToken.value != "default"){
                 return

@@ -2,6 +2,7 @@ package com.example.patient.screens.details
 
 
 import android.os.Bundle
+import androidx.activity.OnBackPressedCallback
 import androidx.core.os.bundleOf
 import androidx.navigation.Navigation
 import com.example.patient.R
@@ -23,11 +24,17 @@ class DetailFragment : BaseFragment<DetailFragmentBinding, DetailViewModel>() {
     override fun setUpViews() {
         super.setUpViews()
         binding.toolbar.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_global_toHome)
+            navigate(R.id.action_global_toHome)
         }
+        activity?.onBackPressedDispatcher?.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                navigate(R.id.action_global_toHome)
+            }
+        })
+
         binding.toolbar.title = ""
         val arg = arguments?.get("reg")
-        val code = arguments?.getString("code","")?:""
+        val code = arguments?.getString("code", "") ?: ""
 //        val model = arguments?.getParcelable<RegisterModel?>("model")
         arg?.let {
             val register = arg as Register
@@ -36,14 +43,14 @@ class DetailFragment : BaseFragment<DetailFragmentBinding, DetailViewModel>() {
             binding.fioText.text = register.fio
             binding.phoneText.text = register.phone
             binding.dateText.text = register.birthday.deNormalize()
-            if (code.isEmpty()){
+            if (code.isEmpty()) {
                 binding.idText.invisible()
                 binding.idLabel.invisible()
             }
             binding.idText.text = code
             val bundle = bundleOf()
             bundle.putString("code", code)
-            bundle.putParcelable("reg",register)
+            bundle.putParcelable("reg", register)
             binding.registeredPLace.setOnClickListener {
                 navigate(R.id.action_toRegisterFragment, bundle)
             }
@@ -52,7 +59,7 @@ class DetailFragment : BaseFragment<DetailFragmentBinding, DetailViewModel>() {
             }
 
             binding.reversePLace.setOnClickListener {
-                val form= Form4()
+                val form = Form4()
 //                model?.let {
 //                    form.ch_rtn_accept_newborn_1=it.rtn
 //                }
