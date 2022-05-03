@@ -12,6 +12,7 @@ import androidx.navigation.Navigation
 import androidx.viewbinding.ViewBinding
 import com.example.patient.R
 import com.example.patient.databinding.LoginFragmentBinding
+import com.example.patient.databinding.SearchFragmentBinding
 import com.example.patient.screens.MainActivity
 import com.example.patient.screens.MainViewModel
 import com.example.patient.utils.ui.InfoAlert
@@ -74,15 +75,20 @@ abstract class BaseFragment<VBinding : ViewBinding, VM : BaseViewModel> : Fragme
         InfoAlert.hideProgressDialog()
         viewModel.mutableErrorType.observe(viewLifecycleOwner) {
             InfoAlert.hideProgressDialog()
-            Log.v("tag","$it")
+
             when (it) {
-                ErrorType.UNKNOWN, ErrorType.NETWORK,
-                ErrorType.TIMEOUT, ErrorType.HOST_EXCEPTION -> {
+                ErrorType.UNKNOWN, ErrorType.TIMEOUT, ErrorType.HOST_EXCEPTION -> {
                     Snackbar.make(requireContext(), requireView(), it.name, 2000).show()
                 }
+                ErrorType.NETWORK->{
+                    if (binding is SearchFragmentBinding) {
+                        Snackbar.make(requireContext(), requireView(),getString(R.string.internet_problem), 2000).show()
 
+                    }else{
+                        Snackbar.make(requireContext(), requireView(),getString(R.string.no_connection), 2000).show()
+                    }
+                }
                 ErrorType.SESSION_EXPIRED->{
-
                     Navigation.findNavController(binding.root).navigate(R.id.action_global_toLogin)
                 }
 

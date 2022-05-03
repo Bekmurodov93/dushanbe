@@ -104,5 +104,7 @@
     <string name="sync_succeeded">Маълумот бомуваффақият ҳамоҳангсозии  карда шуд</string>
     <string name="search_hint">Поиск по ФИО, ID и номеру ...</string>
     <string name="find_client">Воридкунии беморони такрори</string>
+    <string name="internet_problem">Ин бахш бе пайвастшавӣ ба интернет кор намекунад.</string>
+    <string name="no_connection">Пайвасти интернет нест.</string>
 
 </resources>
