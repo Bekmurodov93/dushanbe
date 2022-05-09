@@ -106,5 +106,6 @@
     <string name="find_client">Воридкунии беморони такрори</string>
     <string name="internet_problem">Ин бахш бе пайвастшавӣ ба интернет кор намекунад.</string>
     <string name="no_connection">Пайвасти интернет нест.</string>
-
+    <string name="welcome_title">Электронный журнал</string>
+    <string name="welcome_desc">регистрации перинатальных направлений и исходов беременности и родов</string>
 </resources>

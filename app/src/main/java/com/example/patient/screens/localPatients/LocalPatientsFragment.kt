@@ -27,13 +27,12 @@ class LocalPatientsFragment : BaseFragment<LocalPatientsFragmentBinding, LocalPa
 
         binding.syncBtn.setOnClickListener {
             viewModel.syncLocalPatients()
-            viewModel.netWorkConnect.observe(viewLifecycleOwner) {
-                it?.let { b ->
-                    if (!b) Toast.makeText(
-                        requireContext(),
-                        "Please connect to internet",
-                        Toast.LENGTH_LONG
-                    ).show()
+        }
+
+        viewModel.netWorkConnect.observe(viewLifecycleOwner) {
+            it?.let { b ->
+                if (!b){
+                    noInternetConnection()
                 }
             }
         }
@@ -63,6 +62,14 @@ class LocalPatientsFragment : BaseFragment<LocalPatientsFragmentBinding, LocalPa
         binding.syncInfo.visible()
         binding.syncNumber.invisible()
         binding.syncInfo.text = getString(R.string.sync_succeeded)
+    }
+
+    private fun noInternetConnection(){
+        binding.syncBtn.invisible()
+        binding.syncIcon.setBackgroundResource(R.drawable.ic_wifi_off)
+        binding.syncInfo.visible()
+        binding.syncNumber.invisible()
+        binding.syncInfo.text = getString(R.string.no_connection)
     }
 
 }

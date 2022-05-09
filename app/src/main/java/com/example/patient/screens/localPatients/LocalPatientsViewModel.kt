@@ -19,6 +19,9 @@ class LocalPatientsViewModel @Inject constructor(
     private val networkMonitor: NetworkMonitor
 ): BaseViewModel() {
     val netWorkConnect=MutableLiveData<Boolean?>(null)
+    init {
+        netWorkConnect.postValue(networkMonitor.isConnected())
+    }
 
     fun getLocalPatients(): LiveData<List<Register>?> {
         val resp = MutableLiveData<List<Register>?>()

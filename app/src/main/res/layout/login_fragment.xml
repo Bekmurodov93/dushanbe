@@ -95,6 +95,7 @@
                     android:text="@string/forgot.password"
                     style="@style/blackRegular16"
                     android:layout_marginTop="15dp"
+                    android:visibility="gone"
                     app:layout_constraintTop_toBottomOf="@+id/password"
                     app:layout_constraintRight_toRightOf="parent"/>
 
