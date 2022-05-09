@@ -32,7 +32,7 @@ class IntroFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val pagerAdapter = WelcomePagerAdapter(this, 3)
+        val pagerAdapter = WelcomePagerAdapter(this, 1)
         val digitalPager = view.findViewById<ViewPager2>(R.id.intro_pager)
         digitalPager.adapter = pagerAdapter
         val pagerTabLayout = view.findViewById<TabLayout>(R.id.into_tab_layout)
@@ -62,6 +62,8 @@ class IntroFragment : Fragment() {
             when (currentItem) {
                 0 -> {
                     digitalPager.setCurrentItem(1, true)
+                    progressBar.visible()
+                    openMainActivity()
                 }
                 1 -> {
                     digitalPager.setCurrentItem(2, true)

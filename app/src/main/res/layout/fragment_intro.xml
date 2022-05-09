@@ -51,7 +51,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/headlineBlackRegular24"
-                    android:text="Donec massa volutpat congue arcu vitae "
+                    android:text="@string/welcome_title"
                     android:textAlignment="center"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
@@ -63,8 +63,7 @@
                     style="@style/blackRegular14"
                     android:textColor="@color/lightGrey"
                     android:textAlignment="center"
-                    android:text="Luctus vel nunc tempor etiam nascetur
-                    potenti erat eu nisi vitae"
+                    android:text="@string/welcome_desc"
                     app:layout_constraintTop_toBottomOf="@+id/mainText"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"/>

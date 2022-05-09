@@ -106,4 +106,6 @@
     <string name="find_client">Ввод данных повторных пациентов</string>
     <string name="internet_problem">Этот раздел не работает без подключения к интернету.</string>
     <string name="no_connection">Подключение к Интернету отсутствует.</string>
+    <string name="welcome_title">Электронный журнал</string>
+    <string name="welcome_desc">регистрации перинатальных направлений и исходов беременности и родов</string>
 </resources>

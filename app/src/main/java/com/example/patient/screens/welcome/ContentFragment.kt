@@ -32,7 +32,7 @@ class ContentFragment : Fragment() {
     private fun changeContent(page: Int) {
         when (page) {
             1 -> {
-                img.background=resources.getDrawable(R.drawable.two)
+                img.background=resources.getDrawable(R.drawable.one)
             }
             2 -> {
                 img.background=resources.getDrawable(R.drawable.three)
