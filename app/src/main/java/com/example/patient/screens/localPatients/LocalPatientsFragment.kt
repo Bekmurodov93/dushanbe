@@ -1,7 +1,6 @@
 package com.example.patient.screens.localPatients
 
 import android.annotation.SuppressLint
-import android.widget.Toast
 import com.example.patient.R
 import com.example.patient.databinding.LocalPatientsFragmentBinding
 import com.example.patient.repositories.register.Register
