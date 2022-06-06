@@ -17,8 +17,7 @@ import com.example.dushanbe.utils.ui.invisible
 import com.example.dushanbe.utils.ui.visible
 
 class IntroFragment : Fragment() {
-    private lateinit var progressBar: FrameLayout
-    private var currentItem = 0
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -36,6 +35,5 @@ class IntroFragment : Fragment() {
         val homeIntent = Intent(requireContext(), MainActivity::class.java)
         requireContext().startActivity(homeIntent)
         requireActivity().finish()
-        progressBar.invisible()
     }
 }

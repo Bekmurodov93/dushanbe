@@ -108,4 +108,6 @@
     <string name="no_connection">Подключение к Интернету отсутствует.</string>
     <string name="welcome_title">Электронный журнал</string>
     <string name="welcome_desc">регистрации перинатальных направлений и исходов беременности и родов</string>
+    <string name="organ_dushanbe">исполнительный орган государсвенной \nвласти города Душанбе</string>
+    <string name="invest_dushanbe">Инвестиционные вазможности \nгорода Душанбе</string>
 </resources>
