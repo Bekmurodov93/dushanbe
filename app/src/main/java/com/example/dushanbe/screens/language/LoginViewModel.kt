@@ -1,4 +1,4 @@
-package com.example.dushanbe.screens.login
+package com.example.dushanbe.screens.language
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

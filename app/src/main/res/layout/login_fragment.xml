@@ -2,11 +2,11 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        tools:context=".screens.login.LanguageFragment">
+        tools:context=".screens.language.LanguageFragment">
     <data>
         <variable
                 name="loginModel"
-                type="com.example.dushanbe.screens.login.LoginViewModel" />
+                type="com.example.dushanbe.screens.language.LoginViewModel" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

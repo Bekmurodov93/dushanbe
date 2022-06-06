@@ -5,8 +5,8 @@
         android:id="@+id/nav_graph"
         app:startDestination="@id/homeFragment">
     <action
-            android:id="@+id/action_global_toLogin"
-            app:destination="@id/loginFragment" />
+            android:id="@+id/action_global_toLanguage"
+            app:destination="@id/languageFragment" />
     <action
             android:id="@+id/action_global_toHome"
             app:destination="@id/homeFragment" />
@@ -31,8 +31,8 @@
 
 
     <fragment
-            android:id="@+id/loginFragment"
-            android:name="com.example.dushanbe.screens.login.LanguageFragment"
+            android:id="@+id/languageFragment"
+            android:name="com.example.dushanbe.screens.language.LanguageFragment"
             tools:layout="@layout/login_fragment">
         <action
                 android:id="@+id/action_loginToHome"

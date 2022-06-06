@@ -11,9 +11,9 @@ import androidx.navigation.fragment.NavHostFragment
 import com.example.dushanbe.R
 import com.example.dushanbe.databinding.ActivityMainBinding
 import com.example.dushanbe.utils.LocaleManager
-import com.example.dushanbe.utils.ui.Utils.countryCodeToFlagEmoji
+import com.example.dushanbe.utils.ui.invisible
+import com.example.dushanbe.utils.ui.visible
 import dagger.hilt.android.AndroidEntryPoint
-import java.util.*
 
 
 @AndroidEntryPoint
@@ -26,32 +26,28 @@ class MainActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         WindowCompat.setDecorFitsSystemWindows(window, false)
-//        if (!lang){
-//            setLocale(viewModel.lang!!)
-//        }
 
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navController = navHostFragment.navController
-//        binding.bottomNavigation.setupWithNavController(navController)
-//        appBarConfiguration = AppBarConfiguration(navController.graph)
-        // Set up ActionBar
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-//        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration)
-//        viewModel.authToken.observe(this) {
-//            if (it.isNullOrEmpty() && it != "default"){
-//                navController.navigate(R.id.action_global_toLogin)
-//            }
-//        }
 
-//        binding.ruFlag.text=countryCodeToFlagEmoji("ru")
-//        binding.engFlag.text=countryCodeToFlagEmoji("en")
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
          viewModel.firstAccess.observe(this) {
             if (it != null) {
                  if (it) {
-                     navController.navigate(R.id.action_global_toLogin)
+                     navController.navigate(R.id.action_global_toLanguage)
                  }
+            }
+        }
+
+        navController.addOnDestinationChangedListener { controller, destination, arguments ->
+            if (destination.id==R.id.languageFragment){
+                binding.logoWrapper.invisible()
+                binding.langSelector.invisible()
+            }else {
+                binding.logoWrapper.visible()
+                binding.langSelector.visible()
             }
         }
 
@@ -63,7 +59,7 @@ class MainActivity : AppCompatActivity(){
             }
         }
 
-        if (navController.currentDestination?.id == R.id.loginFragment) return
+        if (navController.currentDestination?.id == R.id.languageFragment) return
         super.onBackPressed()
     }
     override fun onSupportNavigateUp(): Boolean {

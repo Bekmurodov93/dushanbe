@@ -111,4 +111,6 @@
     <string name="organ_dushanbe">исполнительный орган города Душанбе</string>
     <string name="invest_dushanbe">Инвестиционные вазможности города Душанбе</string>
     <string name="english">ENG</string>
+    <string name="english_lang">Англиский язык</string>
+    <string name="russian_lang">Русский язык</string>
 </resources>

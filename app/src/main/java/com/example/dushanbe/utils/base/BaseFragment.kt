@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import androidx.viewbinding.ViewBinding
 import com.example.dushanbe.R
+import com.example.dushanbe.databinding.LanguageFragmentBinding
 import com.example.dushanbe.databinding.LoginFragmentBinding
 import com.example.dushanbe.databinding.SearchFragmentBinding
 import com.example.dushanbe.screens.MainActivity
@@ -56,7 +57,7 @@ abstract class BaseFragment<VBinding : ViewBinding, VM : BaseViewModel> : Fragme
         observeData()
         observeView()
         val root= (activity as MainActivity).findViewById<View>(R.id.activityView)
-        if (binding !is LoginFragmentBinding) {
+        if (binding !is LanguageFragmentBinding) {
             binding.root.applyKeyboardInset()
             root.applyKeyboardInset(true)
         }else{
@@ -88,7 +89,7 @@ abstract class BaseFragment<VBinding : ViewBinding, VM : BaseViewModel> : Fragme
                     }
                 }
                 ErrorType.SESSION_EXPIRED->{
-                    Navigation.findNavController(binding.root).navigate(R.id.action_global_toLogin)
+                    Navigation.findNavController(binding.root).navigate(R.id.action_global_toLanguage)
                 }
 
                 ErrorType.BAD_REQUEST -> {

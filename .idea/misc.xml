@@ -40,8 +40,8 @@
         <entry key="app/src/main/res/drawable/selected_pager_dot.xml" value="0.3138888888888889" />
         <entry key="app/src/main/res/drawable/tab_pager_selector.xml" value="0.3452502553626149" />
         <entry key="app/src/main/res/layout/activity_fullscreen.xml" value="0.1606962663975782" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.125" />
-        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_welcom2.xml" value="0.18806219337099161" />
         <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.14130434782608695" />
         <entry key="app/src/main/res/layout/before_birth_register_fragment.xml" value="0.1" />
@@ -55,7 +55,7 @@
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.20471014492753623" />
         <entry key="app/src/main/res/layout/home_fragment.xml" value="0.1765625" />
         <entry key="app/src/main/res/layout/info_fragment.xml" value="0.23614092567998327" />
-        <entry key="app/src/main/res/layout/language_fragment.xml" value="0.18645833333333334" />
+        <entry key="app/src/main/res/layout/language_fragment.xml" value="0.3327534993489584" />
         <entry key="app/src/main/res/layout/list_item.xml" value="0.21302083333333333" />
         <entry key="app/src/main/res/layout/local_patients_fragment.xml" value="0.22689208984375003" />
         <entry key="app/src/main/res/layout/login_fragment.xml" value="0.241259765625" />
