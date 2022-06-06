@@ -17,11 +17,10 @@ import dagger.hilt.android.AndroidEntryPoint
 
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity(){
+class MainActivity : AppCompatActivity() {
     private val binding: ActivityMainBinding by lazy { ActivityMainBinding.inflate(layoutInflater) }
     private lateinit var navController: NavController
     private val viewModel: MainViewModel by viewModels()
-    private var lang=false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -33,35 +32,40 @@ class MainActivity : AppCompatActivity(){
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-         viewModel.firstAccess.observe(this) {
+        viewModel.firstAccess.observe(this) {
             if (it != null) {
-                 if (it) {
-                     navController.navigate(R.id.action_global_toLanguage)
-                 }
+                if (it) {
+                    navController.navigate(R.id.action_global_toLanguage)
+                }
             }
         }
 
-        navController.addOnDestinationChangedListener { controller, destination, arguments ->
-            if (destination.id==R.id.languageFragment){
+        binding.engWrapper.setOnClickListener { setLocale("tg") }
+        binding.ruWrapper.setOnClickListener { setLocale("ru") }
+
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            if (destination.id == R.id.languageFragment) {
                 binding.logoWrapper.invisible()
                 binding.langSelector.invisible()
-            }else {
+            } else {
                 binding.logoWrapper.visible()
                 binding.langSelector.visible()
             }
         }
 
     }
+
     override fun onBackPressed() {
-        if (navController.currentDestination?.id == R.id.homeFragment){
-            if (!viewModel.firstAccess.value!!){
+        if (navController.currentDestination?.id == R.id.languageFragment) {
+            if (!viewModel.firstAccess.value!!) {
                 return
             }
         }
 
-        if (navController.currentDestination?.id == R.id.languageFragment) return
+        if (navController.currentDestination?.id == R.id.homeFragment) return
         super.onBackPressed()
     }
+
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
@@ -73,7 +77,7 @@ class MainActivity : AppCompatActivity(){
 
     fun setLocale(language: String) {
         viewModel.persistLanguage(language)
-        LocaleManager.setNewLocale(this,language)
+        LocaleManager.setNewLocale(this, language)
         startActivity(Intent(this, SplashActivity::class.java))
         finish()
     }
