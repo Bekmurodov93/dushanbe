@@ -43,7 +43,7 @@ class HomeFragment : BaseFragment<HomeFragmentBinding, HomeViewModel>() {
 
         }
         binding.fifth.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_homeToLanguageFragment)
+//            Navigation.findNavController(it).navigate(R.id.action_homeToLanguageFragment)
         }
     }
 

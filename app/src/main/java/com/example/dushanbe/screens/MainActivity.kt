@@ -11,6 +11,7 @@ import androidx.navigation.fragment.NavHostFragment
 import com.example.dushanbe.R
 import com.example.dushanbe.databinding.ActivityMainBinding
 import com.example.dushanbe.utils.LocaleManager
+import com.example.dushanbe.utils.ui.Utils.countryCodeToFlagEmoji
 import dagger.hilt.android.AndroidEntryPoint
 import java.util.*
 
@@ -37,15 +38,27 @@ class MainActivity : AppCompatActivity(){
         // Set up ActionBar
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 //        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration)
-        viewModel.authToken.observe(this) {
-            if (it.isNullOrEmpty() && it != "default"){
-                navController.navigate(R.id.action_global_toLogin)
+//        viewModel.authToken.observe(this) {
+//            if (it.isNullOrEmpty() && it != "default"){
+//                navController.navigate(R.id.action_global_toLogin)
+//            }
+//        }
+
+//        binding.ruFlag.text=countryCodeToFlagEmoji("ru")
+//        binding.engFlag.text=countryCodeToFlagEmoji("en")
+
+         viewModel.firstAccess.observe(this) {
+            if (it != null) {
+                 if (it) {
+                     navController.navigate(R.id.action_global_toLogin)
+                 }
             }
         }
+
     }
     override fun onBackPressed() {
         if (navController.currentDestination?.id == R.id.homeFragment){
-            if (viewModel.authToken.value.isNullOrEmpty() && viewModel.authToken.value != "default"){
+            if (!viewModel.firstAccess.value!!){
                 return
             }
         }

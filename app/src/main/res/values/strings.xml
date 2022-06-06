@@ -100,7 +100,7 @@
     <string name="patients">Пациенты</string>
     <string name="sync_succeeded">Данные успешно синхронизированы</string>
     <string name="language">Язык</string>
-    <string name="russian">Русский</string>
+    <string name="russian">РУСС</string>
     <string name="tajik">Таджикиский</string>
     <string name="search_hint">Поиск по ФИО, ID и номеру …</string>
     <string name="find_client">Ввод данных повторных пациентов</string>
@@ -110,4 +110,5 @@
     <string name="welcome_desc">регистрации перинатальных направлений и исходов беременности и родов</string>
     <string name="organ_dushanbe">исполнительный орган государсвенной \nвласти города Душанбе</string>
     <string name="invest_dushanbe">Инвестиционные вазможности \nгорода Душанбе</string>
+    <string name="english">ENG</string>
 </resources>

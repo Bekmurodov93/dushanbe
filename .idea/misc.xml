@@ -40,7 +40,7 @@
         <entry key="app/src/main/res/drawable/selected_pager_dot.xml" value="0.3138888888888889" />
         <entry key="app/src/main/res/drawable/tab_pager_selector.xml" value="0.3452502553626149" />
         <entry key="app/src/main/res/layout/activity_fullscreen.xml" value="0.1606962663975782" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.17028985507246377" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.125" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_welcom2.xml" value="0.18806219337099161" />
         <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.14130434782608695" />

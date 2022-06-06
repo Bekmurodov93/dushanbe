@@ -20,20 +20,21 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
-
-        viewModel.firstAccess.observe(this) {
-            if (it != null) {
-                val homeIntent = if (it) {
-                    Intent(this, WelcomeActivity::class.java)
-                } else {
-                    Intent(this, MainActivity::class.java)
-                }
-                lifecycleScope.launchWhenCreated {
-                    delay(AUTO_HIDE_DELAY_MILLIS)
-                    startHomeActivity(homeIntent)
-                }
-            }
+        val homeIntent = Intent(this, MainActivity::class.java)
+        lifecycleScope.launchWhenCreated {
+            delay(AUTO_HIDE_DELAY_MILLIS)
+            startHomeActivity(homeIntent)
         }
+//        viewModel.firstAccess.observe(this) {
+//            if (it != null) {
+//                val homeIntent = if (it) {
+//                    Intent(this, WelcomeActivity::class.java)
+//                } else {
+//                    Intent(this, MainActivity::class.java)
+//                }
+//
+//            }
+//        }
     }
 
     companion object {

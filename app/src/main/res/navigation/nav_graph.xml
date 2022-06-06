@@ -26,20 +26,13 @@
         <action
                 android:id="@+id/action_homeToSearchFragment"
                 app:destination="@id/searchFragment"/>
-        <action
-                android:id="@+id/action_homeToLanguageFragment"
-                app:destination="@id/languageFragment"/>
-    </fragment>
-    <fragment
-            android:id="@+id/languageFragment"
-            android:name="com.example.dushanbe.screens.language.LanguageFragment"
-            tools:layout="@layout/language_fragment">
 
     </fragment>
+
 
     <fragment
             android:id="@+id/loginFragment"
-            android:name="com.example.dushanbe.screens.login.LoginFragment"
+            android:name="com.example.dushanbe.screens.login.LanguageFragment"
             tools:layout="@layout/login_fragment">
         <action
                 android:id="@+id/action_loginToHome"
