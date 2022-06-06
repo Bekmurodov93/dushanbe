@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        package="com.example.patient">
+        package="com.example.dushanbe">
 
     <uses-sdk tools:overrideLibrary="com.sanojpunchihewa.updatemanager,                                     androidx.camera.camera2,androidx.camera.view,                                     androidx.camera.lifecycle,androidx.camera.core" />
 
@@ -29,7 +29,7 @@
             android:required="false" />
 
     <application
-            android:name="com.example.PatientApp"
+            android:name="com.example.DushanbeApp"
             android:allowBackup="true"
             android:fullBackupContent="true"
             android:icon="@mipmap/ic_launcher"
@@ -38,17 +38,17 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.ConsultantAlif">
         <activity
-                android:name=".screens.welcome.WelcomeActivity"
+                android:name="com.example.dushanbe.screens.welcome.WelcomeActivity"
                 android:exported="true" />
         <activity
-                android:name=".screens.MainActivity"
+                android:name="com.example.dushanbe.screens.MainActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:exported="true"
                 android:windowSoftInputMode="adjustResize"
                 android:theme="@style/Theme.ConsultantAlif.Fullscreen"
                 android:launchMode="singleTop"/>
         <activity
-                android:name=".screens.SplashActivity"
+                android:name="com.example.dushanbe.screens.SplashActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:exported="true"
                 android:theme="@style/Theme.ConsultantAlif">

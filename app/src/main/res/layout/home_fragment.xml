@@ -6,7 +6,7 @@
     <data>
         <variable
                 name="homeModel"
-                type="com.example.patient.screens.home.HomeViewModel" />
+                type="com.example.dushanbe.screens.home.HomeViewModel" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

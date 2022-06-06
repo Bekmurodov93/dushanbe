@@ -6,7 +6,7 @@
     <data>
         <variable
                 name="viewModel"
-                type="com.example.patient.screens.death.RegisterDeathViewModel" />
+                type="com.example.dushanbe.screens.death.RegisterDeathViewModel" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

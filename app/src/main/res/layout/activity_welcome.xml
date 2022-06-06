@@ -8,7 +8,7 @@
             tools:context=".screens.welcome.WelcomeActivity">
            <androidx.fragment.app.FragmentContainerView
                    android:id="@+id/fragment"
-                   android:name="com.example.patient.screens.welcome.IntroFragment"
+                   android:name="com.example.dushanbe.screens.welcome.IntroFragment"
                    android:layout_width="match_parent"
                    android:layout_height="match_parent"/>
 

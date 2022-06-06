@@ -6,7 +6,7 @@
     <data>
         <variable
                 name="viewModel"
-                type="com.example.patient.screens.reverse.ReverseRegisterViewModel" />
+                type="com.example.dushanbe.screens.reverse.ReverseRegisterViewModel" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

@@ -6,7 +6,7 @@
     <data>
         <variable
                 name="loginModel"
-                type="com.example.patient.screens.login.LoginViewModel" />
+                type="com.example.dushanbe.screens.login.LoginViewModel" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

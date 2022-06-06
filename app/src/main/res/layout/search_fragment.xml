@@ -7,7 +7,7 @@
     <data>
         <variable
                 name="viewModel"
-                type="com.example.patient.screens.search.SearchViewModel" />
+                type="com.example.dushanbe.screens.search.SearchViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

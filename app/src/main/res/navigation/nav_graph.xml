@@ -12,7 +12,7 @@
             app:destination="@id/homeFragment" />
     <fragment
             android:id="@+id/homeFragment"
-            android:name="com.example.patient.screens.home.HomeFragment"
+            android:name="com.example.dushanbe.screens.home.HomeFragment"
             tools:layout="@layout/home_fragment">
         <action
                 android:id="@+id/action_homeToRegister"
@@ -32,14 +32,14 @@
     </fragment>
     <fragment
             android:id="@+id/languageFragment"
-            android:name="com.example.patient.screens.language.LanguageFragment"
+            android:name="com.example.dushanbe.screens.language.LanguageFragment"
             tools:layout="@layout/language_fragment">
 
     </fragment>
 
     <fragment
             android:id="@+id/loginFragment"
-            android:name="com.example.patient.screens.login.LoginFragment"
+            android:name="com.example.dushanbe.screens.login.LoginFragment"
             tools:layout="@layout/login_fragment">
         <action
                 android:id="@+id/action_loginToHome"
@@ -48,7 +48,7 @@
 
     <fragment
             android:id="@+id/searchFragment"
-            android:name="com.example.patient.screens.search.SearchFragment"
+            android:name="com.example.dushanbe.screens.search.SearchFragment"
             tools:layout="@layout/search_fragment">
         <action
                 android:id="@+id/action_searchToDetailsFragment"
@@ -57,12 +57,12 @@
 
     <fragment
             android:id="@+id/infoFragment"
-            android:name="com.example.patient.screens.info.InfoFragment"
+            android:name="com.example.dushanbe.screens.info.InfoFragment"
             tools:layout="@layout/info_fragment">
     </fragment>
     <fragment
             android:id="@+id/registerFragment"
-            android:name="com.example.patient.screens.register.RegisterFragment"
+            android:name="com.example.dushanbe.screens.register.RegisterFragment"
             tools:layout="@layout/register_fragment">
         <action
                 android:id="@+id/action_toRegisterSecondFragment"
@@ -71,7 +71,7 @@
 
     <fragment
             android:id="@+id/registerSecondFragment"
-            android:name="com.example.patient.screens.register.RegisterSecondFragment"
+            android:name="com.example.dushanbe.screens.register.RegisterSecondFragment"
             tools:layout="@layout/register_second_fragment">
         <action
                 android:id="@+id/action_toRegisterThirdFragment"
@@ -79,7 +79,7 @@
     </fragment>
     <fragment
             android:id="@+id/registerThirdFragment"
-            android:name="com.example.patient.screens.register.RegisterThirdFragment"
+            android:name="com.example.dushanbe.screens.register.RegisterThirdFragment"
             tools:layout="@layout/register_third_fragment">
         <action
                 android:id="@+id/action_toDetailsFragment"
@@ -87,7 +87,7 @@
     </fragment>
     <fragment
             android:id="@+id/detailsFragment"
-            android:name="com.example.patient.screens.details.DetailFragment"
+            android:name="com.example.dushanbe.screens.details.DetailFragment"
             tools:layout="@layout/detail_fragment">
         <action
                 android:id="@+id/action_toBeforeBirthRegisterFragment"
@@ -107,12 +107,12 @@
     </fragment>
     <fragment
             android:id="@+id/registerDeathFragment"
-            android:name="com.example.patient.screens.death.RegisterDeathFragment"
+            android:name="com.example.dushanbe.screens.death.RegisterDeathFragment"
             tools:layout="@layout/register_death_fragment">
     </fragment>
     <fragment
             android:id="@+id/beforeBirthRegisterFragment"
-            android:name="com.example.patient.screens.beforebirth.BeforeBirthRegisterFragment"
+            android:name="com.example.dushanbe.screens.beforebirth.BeforeBirthRegisterFragment"
             tools:layout="@layout/before_birth_register_fragment">
         <action
                 android:id="@+id/action_toEmergencyFragment"
@@ -120,7 +120,7 @@
     </fragment>
     <fragment
             android:id="@+id/emergencyFragment"
-            android:name="com.example.patient.screens.emergency.EmergencyFragment"
+            android:name="com.example.dushanbe.screens.emergency.EmergencyFragment"
             tools:layout="@layout/emergency_fragment">
         <action
                 android:id="@+id/action_toReverseRegisterFragment"
@@ -128,13 +128,13 @@
     </fragment>
     <fragment
             android:id="@+id/reverseRegisterFragment"
-            android:name="com.example.patient.screens.reverse.ReverseRegisterFragment"
+            android:name="com.example.dushanbe.screens.reverse.ReverseRegisterFragment"
             tools:layout="@layout/reverse_register_fragment">
     </fragment>
 
     <fragment
             android:id="@+id/localPatientsFragment"
-            android:name="com.example.patient.screens.localPatients.LocalPatientsFragment"
+            android:name="com.example.dushanbe.screens.localPatients.LocalPatientsFragment"
             tools:layout="@layout/local_patients_fragment">
     </fragment>
 
