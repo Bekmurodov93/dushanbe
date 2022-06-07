@@ -64,6 +64,7 @@ abstract class BaseFragment<VBinding : ViewBinding, VM : BaseViewModel> : Fragme
             root.setOnApplyWindowInsetsListener(null)
         }
 
+
     }
 
     open fun setUpViews() {}

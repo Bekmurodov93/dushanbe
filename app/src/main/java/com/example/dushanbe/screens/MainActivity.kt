@@ -40,19 +40,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        binding.engWrapper.setOnClickListener { setLocale("tg") }
-        binding.ruWrapper.setOnClickListener { setLocale("ru") }
-
-        navController.addOnDestinationChangedListener { _, destination, _ ->
-            if (destination.id == R.id.languageFragment) {
-                binding.logoWrapper.invisible()
-                binding.langSelector.invisible()
-            } else {
-                binding.logoWrapper.visible()
-                binding.langSelector.visible()
-            }
-        }
-
     }
 
     override fun onBackPressed() {
