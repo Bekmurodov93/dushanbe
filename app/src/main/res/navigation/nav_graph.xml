@@ -10,6 +10,7 @@
     <action
             android:id="@+id/action_global_toHome"
             app:destination="@id/homeFragment" />
+
     <fragment
             android:id="@+id/homeFragment"
             android:name="com.example.dushanbe.screens.home.HomeFragment"
@@ -17,9 +18,6 @@
         <action
                 android:id="@+id/action_homeToRegister"
                 app:destination="@id/registerFragment"/>
-        <action
-                android:id="@+id/action_homeToLocalPatientsFragment"
-                app:destination="@id/localPatientsFragment"/>
         <action
                 android:id="@+id/action_homeToLocalInfoFragment"
                 app:destination="@id/infoFragment"/>
@@ -39,96 +37,5 @@
                 app:destination="@id/homeFragment"/>
     </fragment>
 
-    <fragment
-            android:id="@+id/searchFragment"
-            android:name="com.example.dushanbe.screens.search.SearchFragment"
-            tools:layout="@layout/search_fragment">
-        <action
-                android:id="@+id/action_searchToDetailsFragment"
-                app:destination="@id/detailsFragment"/>
-    </fragment>
-
-    <fragment
-            android:id="@+id/infoFragment"
-            android:name="com.example.dushanbe.screens.info.InfoFragment"
-            tools:layout="@layout/info_fragment">
-    </fragment>
-    <fragment
-            android:id="@+id/registerFragment"
-            android:name="com.example.dushanbe.screens.register.RegisterFragment"
-            tools:layout="@layout/register_fragment">
-        <action
-                android:id="@+id/action_toRegisterSecondFragment"
-                app:destination="@id/registerSecondFragment"/>
-    </fragment>
-
-    <fragment
-            android:id="@+id/registerSecondFragment"
-            android:name="com.example.dushanbe.screens.register.RegisterSecondFragment"
-            tools:layout="@layout/register_second_fragment">
-        <action
-                android:id="@+id/action_toRegisterThirdFragment"
-                app:destination="@id/registerThirdFragment"/>
-    </fragment>
-    <fragment
-            android:id="@+id/registerThirdFragment"
-            android:name="com.example.dushanbe.screens.register.RegisterThirdFragment"
-            tools:layout="@layout/register_third_fragment">
-        <action
-                android:id="@+id/action_toDetailsFragment"
-                app:destination="@id/detailsFragment"/>
-    </fragment>
-    <fragment
-            android:id="@+id/detailsFragment"
-            android:name="com.example.dushanbe.screens.details.DetailFragment"
-            tools:layout="@layout/detail_fragment">
-        <action
-                android:id="@+id/action_toBeforeBirthRegisterFragment"
-                app:destination="@id/beforeBirthRegisterFragment"/>
-        <action
-                android:id="@+id/action_toReverseRegisterFragment"
-                app:destination="@id/reverseRegisterFragment"/>
-        <action
-                android:id="@+id/action_toRegisterDeathFragment"
-                app:destination="@id/registerDeathFragment"/>
-        <action
-                android:id="@+id/action_toRegisterFragment"
-                app:destination="@id/registerFragment"/>
-        <action
-                android:id="@+id/action_toEmergencyFragment"
-                app:destination="@id/emergencyFragment"/>
-    </fragment>
-    <fragment
-            android:id="@+id/registerDeathFragment"
-            android:name="com.example.dushanbe.screens.death.RegisterDeathFragment"
-            tools:layout="@layout/register_death_fragment">
-    </fragment>
-    <fragment
-            android:id="@+id/beforeBirthRegisterFragment"
-            android:name="com.example.dushanbe.screens.beforebirth.BeforeBirthRegisterFragment"
-            tools:layout="@layout/before_birth_register_fragment">
-        <action
-                android:id="@+id/action_toEmergencyFragment"
-                app:destination="@id/emergencyFragment"/>
-    </fragment>
-    <fragment
-            android:id="@+id/emergencyFragment"
-            android:name="com.example.dushanbe.screens.emergency.EmergencyFragment"
-            tools:layout="@layout/emergency_fragment">
-        <action
-                android:id="@+id/action_toReverseRegisterFragment"
-                app:destination="@id/reverseRegisterFragment"/>
-    </fragment>
-    <fragment
-            android:id="@+id/reverseRegisterFragment"
-            android:name="com.example.dushanbe.screens.reverse.ReverseRegisterFragment"
-            tools:layout="@layout/reverse_register_fragment">
-    </fragment>
-
-    <fragment
-            android:id="@+id/localPatientsFragment"
-            android:name="com.example.dushanbe.screens.localPatients.LocalPatientsFragment"
-            tools:layout="@layout/local_patients_fragment">
-    </fragment>
 
 </navigation>

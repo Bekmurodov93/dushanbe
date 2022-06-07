@@ -11,8 +11,6 @@ import androidx.navigation.Navigation
 import androidx.viewbinding.ViewBinding
 import com.example.dushanbe.R
 import com.example.dushanbe.databinding.LanguageFragmentBinding
-import com.example.dushanbe.databinding.LoginFragmentBinding
-import com.example.dushanbe.databinding.SearchFragmentBinding
 import com.example.dushanbe.screens.MainActivity
 import com.example.dushanbe.screens.MainViewModel
 import com.example.dushanbe.utils.ui.InfoAlert
@@ -82,12 +80,7 @@ abstract class BaseFragment<VBinding : ViewBinding, VM : BaseViewModel> : Fragme
                     Snackbar.make(requireContext(), requireView(), it.name, 2000).show()
                 }
                 ErrorType.NETWORK->{
-                    if (binding is SearchFragmentBinding) {
-                        Snackbar.make(requireContext(), requireView(),getString(R.string.internet_problem), 2000).show()
-
-                    }else{
-                        Snackbar.make(requireContext(), requireView(),getString(R.string.no_connection), 2000).show()
-                    }
+                    Snackbar.make(requireContext(), requireView(),getString(R.string.no_connection), 2000).show()
                 }
                 ErrorType.SESSION_EXPIRED->{
                     Navigation.findNavController(binding.root).navigate(R.id.action_global_toLanguage)
