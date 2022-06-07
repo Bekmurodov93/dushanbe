@@ -113,4 +113,10 @@
     <string name="english">ENG</string>
     <string name="english_lang">Англиский язык</string>
     <string name="russian_lang">Русский язык</string>
+    <string name="videos">Видеоролики</string>
+    <string name="project">Проекты</string>
+    <string name="presentation">Презентатции</string>
+    <string name="kodeks">Кодекси</string>
+    <string name="dushanbe">о душанбе</string>
+    <string name="tajikistan">о таджикистан</string>
 </resources>
