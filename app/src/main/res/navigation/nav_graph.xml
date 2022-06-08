@@ -19,11 +19,11 @@
                 android:id="@+id/action_homeToRegister"
                 app:destination="@id/registerFragment"/>
         <action
-                android:id="@+id/action_homeToLocalInfoFragment"
-                app:destination="@id/infoFragment"/>
+                android:id="@+id/action_homeToVideos"
+                app:destination="@id/videosFragment"/>
         <action
-                android:id="@+id/action_homeToSearchFragment"
-                app:destination="@id/searchFragment"/>
+                android:id="@+id/action_homeToProjects"
+                app:destination="@id/projectsFragment"/>
 
     </fragment>
 
@@ -37,5 +37,28 @@
                 app:destination="@id/homeFragment"/>
     </fragment>
 
+
+    <fragment
+            android:id="@+id/videosFragment"
+            android:name="com.example.dushanbe.screens.videos.VideosFragment"
+            tools:layout="@layout/videos_layout">
+
+    </fragment>
+
+    <fragment
+            android:id="@+id/projectsFragment"
+            android:name="com.example.dushanbe.screens.projects.ProjectsFragment"
+            tools:layout="@layout/project_layout">
+        <action
+                android:id="@+id/action_projectsToPdfFragment"
+                app:destination="@id/pdfFragment"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/pdfFragment"
+            android:name="com.example.dushanbe.screens.projects.PdfFragment"
+            tools:layout="@layout/fragment_pdf">
+
+    </fragment>
 
 </navigation>

@@ -146,6 +146,7 @@
                         android:layout_gravity="center"
                         app:layout_constraintTop_toBottomOf="@+id/logoWrapper">
                     <androidx.cardview.widget.CardView
+                            android:id="@+id/videos"
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_columnWeight="0.5"
@@ -183,6 +184,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                            android:id="@+id/projects"
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_columnWeight="0.5"
@@ -221,6 +223,7 @@
 
 
                     <androidx.cardview.widget.CardView
+                            android:id="@+id/presents"
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_columnWeight="0.5"
@@ -258,6 +261,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                            android:id="@+id/kodeksi"
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_columnWeight="0.5"
@@ -296,6 +300,7 @@
 
 
                     <androidx.cardview.widget.CardView
+                            android:id="@+id/dushanbe"
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_columnWeight="0.5"
@@ -333,6 +338,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                            android:id="@+id/tajikistan"
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_columnWeight="0.5"

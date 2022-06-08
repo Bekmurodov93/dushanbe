@@ -119,4 +119,7 @@
     <string name="kodeks">Кодекси</string>
     <string name="dushanbe">о душанбе</string>
     <string name="tajikistan">о таджикистан</string>
+    <string name="video_one_title">Туристическый вазможности города Душанбе</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

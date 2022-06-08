@@ -2,6 +2,7 @@ package com.example.dushanbe.utils.ui
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
@@ -9,9 +10,13 @@ import android.view.ViewGroup
 import android.widget.AutoCompleteTextView
 import android.widget.TextView
 import androidx.annotation.CheckResult
+import androidx.annotation.IdRes
+import androidx.annotation.RawRes
+import androidx.core.os.bundleOf
 import androidx.core.view.*
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
+import androidx.navigation.Navigation
 import com.example.dushanbe.R
 import com.example.dushanbe.utils.enums.InputErrorType
 import com.google.android.material.textfield.TextInputEditText
@@ -31,7 +36,9 @@ fun View.visible() {
 fun View.invisible() {
     this.visibility = View.GONE
 }
-
+fun View.navigate(@IdRes route:Int,bundle:Bundle= bundleOf()){
+    Navigation.findNavController(this).navigate(route,bundle)
+}
 fun View.applyKeyboardInset(isSubtract: Boolean = false) {
     ViewCompat.setOnApplyWindowInsetsListener(this) { view, insets ->
         val posBottom = insets.getInsets(WindowInsetsCompat.Type.ime()).bottom

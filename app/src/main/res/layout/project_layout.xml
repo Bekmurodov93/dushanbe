@@ -139,7 +139,7 @@
                         app:layout_constraintTop_toBottomOf="@+id/logoWrapper">
                     <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
-                            android:layout_height="80dp"
+                            android:layout_height="wrap_content"
                             android:layout_columnWeight="0.5"
                             android:layout_marginRight="5dp"
                             app:cardElevation="5dp"
@@ -148,10 +148,12 @@
                             app:cardCornerRadius="12dp"
                             android:shadowRadius="0">
                         <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/oneWrapper"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:background="@drawable/btn_back"
                                 android:padding="10dp">
+
                             <ImageView
                                     android:id="@+id/videoLogo"
                                     android:layout_width="wrap_content"
@@ -160,14 +162,14 @@
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:layout_constraintBottom_toBottomOf="parent"/>
                             <TextView
-                                    android:id="@+id/videoText"
+                                    android:id="@+id/one1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="@string/videos"
                                     android:textAllCaps="true"
-                                    android:layout_marginLeft="20dp"
                                     style="@style/headlineWhiteRegular16"
-                                    app:layout_constraintLeft_toRightOf="@+id/videoLogo"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:layout_constraintBottom_toBottomOf="parent"/>
 
@@ -176,7 +178,7 @@
 
                     <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
-                            android:layout_height="80dp"
+                            android:layout_height="wrap_content"
                             android:layout_columnWeight="0.5"
                             android:layout_marginLeft="5dp"
                             app:cardElevation="5dp"
@@ -189,22 +191,15 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/btn_back"
                                 android:padding="10dp">
-                            <ImageView
-                                    android:id="@+id/projectLogo"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    app:layout_constraintLeft_toLeftOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintBottom_toBottomOf="parent"/>
                             <TextView
                                     android:id="@+id/projectText"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="@string/project"
                                     android:textAllCaps="true"
-                                    android:layout_marginLeft="20dp"
                                     style="@style/headlineWhiteRegular16"
-                                    app:layout_constraintLeft_toRightOf="@+id/projectLogo"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:layout_constraintBottom_toBottomOf="parent"/>
 
@@ -214,7 +209,7 @@
 
                     <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
-                            android:layout_height="80dp"
+                            android:layout_height="wrap_content"
                             android:layout_columnWeight="0.5"
                             android:layout_marginRight="5dp"
                             app:cardElevation="5dp"
@@ -227,22 +222,15 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/btn_back"
                                 android:padding="10dp">
-                            <ImageView
-                                    android:id="@+id/presentLogo"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    app:layout_constraintLeft_toLeftOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintBottom_toBottomOf="parent"/>
                             <TextView
-                                    android:id="@+id/presentText"
+                                    android:id="@+id/three3"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="@string/presentation"
                                     android:textAllCaps="true"
-                                    android:layout_marginLeft="20dp"
                                     style="@style/headlineWhiteRegular16"
-                                    app:layout_constraintLeft_toRightOf="@+id/presentLogo"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:layout_constraintBottom_toBottomOf="parent"/>
 
@@ -251,7 +239,7 @@
 
                     <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
-                            android:layout_height="80dp"
+                            android:layout_height="wrap_content"
                             android:layout_columnWeight="0.5"
                             android:layout_marginLeft="5dp"
                             app:cardElevation="5dp"
@@ -264,22 +252,16 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/btn_back"
                                 android:padding="10dp">
-                            <ImageView
-                                    android:id="@+id/kodeksLogo"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    app:layout_constraintLeft_toLeftOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintBottom_toBottomOf="parent"/>
                             <TextView
-                                    android:id="@+id/kodeksText"
+                                    android:id="@+id/four4"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="@string/kodeks"
                                     android:textAllCaps="true"
                                     android:layout_marginLeft="20dp"
                                     style="@style/headlineWhiteRegular16"
-                                    app:layout_constraintLeft_toRightOf="@+id/kodeksLogo"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:layout_constraintBottom_toBottomOf="parent"/>
 
@@ -289,7 +271,7 @@
 
                     <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
-                            android:layout_height="80dp"
+                            android:layout_height="wrap_content"
                             android:layout_columnWeight="0.5"
                             android:layout_marginRight="5dp"
                             app:cardElevation="5dp"
@@ -302,22 +284,15 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/btn_back"
                                 android:padding="10dp">
-                            <ImageView
-                                    android:id="@+id/dushanbeLogo"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    app:layout_constraintLeft_toLeftOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintBottom_toBottomOf="parent"/>
                             <TextView
-                                    android:id="@+id/dushanbeText"
+                                    android:id="@+id/five5"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="@string/dushanbe"
                                     android:textAllCaps="true"
-                                    android:layout_marginLeft="20dp"
                                     style="@style/headlineWhiteRegular16"
-                                    app:layout_constraintLeft_toRightOf="@+id/dushanbeLogo"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:layout_constraintBottom_toBottomOf="parent"/>
 
@@ -326,7 +301,7 @@
 
                     <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
-                            android:layout_height="80dp"
+                            android:layout_height="wrap_content"
                             android:layout_columnWeight="0.5"
                             android:layout_marginLeft="5dp"
                             app:cardElevation="5dp"
@@ -339,22 +314,70 @@
                                 android:layout_height="match_parent"
                                 android:background="@drawable/btn_back"
                                 android:padding="10dp">
-                            <ImageView
-                                    android:id="@+id/tajikistanLogo"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    app:layout_constraintLeft_toLeftOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintBottom_toBottomOf="parent"/>
                             <TextView
-                                    android:id="@+id/tajikistanText"
+                                    android:id="@+id/six"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="@string/tajikistan"
                                     android:textAllCaps="true"
-                                    android:layout_marginLeft="20dp"
                                     style="@style/headlineWhiteRegular16"
-                                    app:layout_constraintLeft_toRightOf="@+id/tajikistanLogo"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="parent"/>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="0.5"
+                            app:cardElevation="5dp"
+                            app:cardPreventCornerOverlap="true"
+                            android:layout_marginTop="5dp"
+                            app:cardCornerRadius="12dp"
+                            android:shadowRadius="0">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/btn_back"
+                                android:padding="10dp">
+                            <TextView
+                                    android:id="@+id/seven7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tajikistan"
+                                    android:textAllCaps="true"
+                                    style="@style/headlineWhiteRegular16"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="parent"/>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="0.5"
+                            android:layout_marginLeft="5dp"
+                            app:cardElevation="5dp"
+                            app:cardPreventCornerOverlap="true"
+                            android:layout_marginTop="5dp"
+                            app:cardCornerRadius="12dp"
+                            android:shadowRadius="0">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/btn_back"
+                                android:padding="10dp">
+                            <TextView
+                                    android:id="@+id/text8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tajikistan"
+                                    android:textAllCaps="true"
+                                    style="@style/headlineWhiteRegular16"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:layout_constraintBottom_toBottomOf="parent"/>
                         </androidx.constraintlayout.widget.ConstraintLayout>

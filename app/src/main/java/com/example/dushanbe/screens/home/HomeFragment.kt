@@ -1,10 +1,11 @@
 package com.example.dushanbe.screens.home
 
 
-
+import com.example.dushanbe.R
 import com.example.dushanbe.databinding.HomeFragmentBinding
 import com.example.dushanbe.screens.MainActivity
 import com.example.dushanbe.utils.base.BaseFragment
+import com.example.dushanbe.utils.ui.navigate
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -15,15 +16,31 @@ class HomeFragment : BaseFragment<HomeFragmentBinding, HomeViewModel>() {
 
     override fun observeData() {
         super.observeData()
-
-
     }
 
     override fun setUpViews() {
         super.setUpViews()
         binding.engWrapper.setOnClickListener { (activity as MainActivity).setLocale("tg") }
         binding.ruWrapper.setOnClickListener { (activity as MainActivity).setLocale("ru") }
-
+        binding.videos.setOnClickListener {
+            it.navigate(R.id.action_homeToVideos)
+        }
+        binding.projects.setOnClickListener {
+            it.navigate(R.id.action_homeToProjects)
+        }
+        binding.presents.setOnClickListener {
+            it.navigate(R.id.action_homeToVideos)
+        }
+        binding.kodeksi.setOnClickListener {
+            it.navigate(R.id.action_homeToVideos)
+        }
+        binding.dushanbe.setOnClickListener {
+            it.navigate(R.id.action_homeToVideos)
+        }
+        binding.tajikistan.setOnClickListener {
+            it.navigate(R.id.action_homeToVideos)
+        }
     }
+
 
 }
