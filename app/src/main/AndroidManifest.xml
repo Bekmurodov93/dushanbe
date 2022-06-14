@@ -40,10 +40,12 @@
             android:theme="@style/Theme.ConsultantAlif">
         <activity
                 android:name="com.example.dushanbe.screens.welcome.WelcomeActivity"
-                android:exported="true" />
+                android:exported="true"
+                android:screenOrientation="landscape"/>
         <activity
                 android:name="com.example.dushanbe.screens.MainActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
+                android:screenOrientation="landscape"
                 android:exported="true"
                 android:windowSoftInputMode="adjustResize"
                 android:theme="@style/Theme.ConsultantAlif.Fullscreen"
@@ -52,6 +54,7 @@
                 android:name="com.example.dushanbe.screens.SplashActivity"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:exported="true"
+                android:screenOrientation="landscape"
                 android:theme="@style/Theme.ConsultantAlif">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

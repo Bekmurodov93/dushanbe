@@ -23,9 +23,16 @@ class ProjectsFragment : BaseFragment<ProjectLayoutBinding, ProjectsViewModel>()
         super.setUpViews()
         binding.engWrapper.setOnClickListener { (activity as MainActivity).setLocale("tg") }
         binding.ruWrapper.setOnClickListener { (activity as MainActivity).setLocale("ru") }
+
         binding.oneWrapper.setOnClickListener {
             val bundle = bundleOf()
-            bundle.putString(PDF_NAME, "lorem_ipsum.pdf")
+            bundle.putString(PDF_NAME, "project_one.pdf")
+            it.navigate(R.id.action_projectsToPdfFragment, bundle)
+        }
+
+        binding.twoWrapper.setOnClickListener {
+            val bundle = bundleOf()
+            bundle.putString(PDF_NAME, "project_two.pdf")
             it.navigate(R.id.action_projectsToPdfFragment, bundle)
         }
 

@@ -42,7 +42,6 @@ class PdfFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Log.v("tag",param1.toString())
         pdfViewer.fromAsset(param1?:"").show()
 
     }

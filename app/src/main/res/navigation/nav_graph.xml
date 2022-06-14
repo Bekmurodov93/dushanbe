@@ -24,6 +24,9 @@
         <action
                 android:id="@+id/action_homeToProjects"
                 app:destination="@id/projectsFragment"/>
+        <action
+                android:id="@+id/action_homeToPdfFragment"
+                app:destination="@id/pdfFragment"/>
 
     </fragment>
 
@@ -42,7 +45,9 @@
             android:id="@+id/videosFragment"
             android:name="com.example.dushanbe.screens.videos.VideosFragment"
             tools:layout="@layout/videos_layout">
-
+        <action
+                android:id="@+id/action_videosToVideoFragment"
+                app:destination="@id/videoFragment"/>
     </fragment>
 
     <fragment
@@ -58,6 +63,13 @@
             android:id="@+id/pdfFragment"
             android:name="com.example.dushanbe.screens.projects.PdfFragment"
             tools:layout="@layout/fragment_pdf">
+
+    </fragment>
+
+    <fragment
+            android:id="@+id/videoFragment"
+            android:name="com.example.dushanbe.screens.videos.VideoFragment"
+            tools:layout="@layout/fragment_video">
 
     </fragment>
 

@@ -165,7 +165,7 @@
                                     android:id="@+id/one1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/videos"
+                                    android:text="@string/project_one"
                                     android:textAllCaps="true"
                                     style="@style/headlineWhiteRegular16"
                                     app:layout_constraintLeft_toLeftOf="parent"
@@ -187,6 +187,7 @@
                             app:cardCornerRadius="12dp"
                             android:shadowRadius="0">
                         <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/twoWrapper"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:background="@drawable/btn_back"
@@ -195,7 +196,7 @@
                                     android:id="@+id/projectText"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/project"
+                                    android:text="@string/project_two"
                                     android:textAllCaps="true"
                                     style="@style/headlineWhiteRegular16"
                                     app:layout_constraintLeft_toLeftOf="parent"
@@ -216,6 +217,7 @@
                             app:cardPreventCornerOverlap="true"
                             android:layout_marginTop="5dp"
                             app:cardCornerRadius="12dp"
+                            android:visibility="gone"
                             android:shadowRadius="0">
                         <androidx.constraintlayout.widget.ConstraintLayout
                                 android:layout_width="match_parent"
@@ -246,6 +248,7 @@
                             app:cardPreventCornerOverlap="true"
                             android:layout_marginTop="5dp"
                             app:cardCornerRadius="12dp"
+                            android:visibility="gone"
                             android:shadowRadius="0">
                         <androidx.constraintlayout.widget.ConstraintLayout
                                 android:layout_width="match_parent"
@@ -278,6 +281,7 @@
                             app:cardPreventCornerOverlap="true"
                             android:layout_marginTop="5dp"
                             app:cardCornerRadius="12dp"
+                            android:visibility="gone"
                             android:shadowRadius="0">
                         <androidx.constraintlayout.widget.ConstraintLayout
                                 android:layout_width="match_parent"
@@ -305,6 +309,7 @@
                             android:layout_columnWeight="0.5"
                             android:layout_marginLeft="5dp"
                             app:cardElevation="5dp"
+                            android:visibility="gone"
                             app:cardPreventCornerOverlap="true"
                             android:layout_marginTop="5dp"
                             app:cardCornerRadius="12dp"
@@ -335,6 +340,7 @@
                             app:cardPreventCornerOverlap="true"
                             android:layout_marginTop="5dp"
                             app:cardCornerRadius="12dp"
+                            android:visibility="gone"
                             android:shadowRadius="0">
                         <androidx.constraintlayout.widget.ConstraintLayout
                                 android:layout_width="match_parent"
@@ -360,6 +366,7 @@
                             android:layout_columnWeight="0.5"
                             android:layout_marginLeft="5dp"
                             app:cardElevation="5dp"
+                            android:visibility="gone"
                             app:cardPreventCornerOverlap="true"
                             android:layout_marginTop="5dp"
                             app:cardCornerRadius="12dp"

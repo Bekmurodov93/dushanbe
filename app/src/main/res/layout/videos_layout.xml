@@ -175,15 +175,17 @@
                                 android:shadowRadius="0"
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:layout_constraintLeft_toLeftOf="parent">
-                            <FrameLayout
-                                    android:id="@+id/oneFrame"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content">
+
                                 <VideoView
                                         android:id="@+id/one"
-                                        android:layout_width="match_parent"
+                                        android:layout_width="wrap_content"
                                         android:layout_height="match_parent"/>
-                            </FrameLayout>
+                                <ImageView
+                                        android:id="@+id/onePlay"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@android:drawable/ic_media_play"
+                                        android:layout_gravity="center"/>
 
                         </androidx.cardview.widget.CardView>
                         <TextView
@@ -205,7 +207,7 @@
                         <androidx.cardview.widget.CardView
                                 android:id="@+id/video2"
                                 android:layout_width="0dp"
-                                android:layout_height="80dp"
+                                android:layout_height="140dp"
                                 app:cardElevation="5dp"
                                 app:cardPreventCornerOverlap="true"
                                 android:layout_marginTop="5dp"
@@ -215,15 +217,21 @@
                                 app:layout_constraintLeft_toLeftOf="parent">
                             <VideoView
                                     android:id="@+id/two"
-                                    android:layout_width="match_parent"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="match_parent"/>
+                            <ImageView
+                                    android:id="@+id/twoPlay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@android:drawable/ic_media_play"
+                                    android:layout_gravity="center"/>
                         </androidx.cardview.widget.CardView>
                         <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 style="@style/blackRegular13"
                                 android:padding="5dp"
-                                android:text="@string/video_one_title"
+                                android:text="@string/opportunity_dushanbe"
                                 app:layout_constraintTop_toBottomOf="@+id/video2"
                                 app:layout_constraintLeft_toLeftOf="parent"/>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -237,7 +245,7 @@
                         <androidx.cardview.widget.CardView
                                 android:id="@+id/video3"
                                 android:layout_width="0dp"
-                                android:layout_height="80dp"
+                                android:layout_height="140dp"
                                 app:cardElevation="5dp"
                                 app:cardPreventCornerOverlap="true"
                                 android:layout_marginTop="5dp"
@@ -247,15 +255,21 @@
                                 app:layout_constraintLeft_toLeftOf="parent">
                             <VideoView
                                     android:id="@+id/three"
-                                    android:layout_width="match_parent"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="match_parent"/>
+                            <ImageView
+                                    android:id="@+id/threePlay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@android:drawable/ic_media_play"
+                                    android:layout_gravity="center"/>
                         </androidx.cardview.widget.CardView>
                         <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 style="@style/blackRegular13"
                                 android:padding="5dp"
-                                android:text="@string/video_one_title"
+                                android:text="@string/about_dushanbe"
                                 app:layout_constraintTop_toBottomOf="@+id/video3"
                                 app:layout_constraintLeft_toLeftOf="parent"/>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -265,11 +279,12 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="0.5"
-                            android:layout_marginRight="5dp">
+                            android:layout_marginRight="5dp"
+                            android:visibility="gone">
                         <androidx.cardview.widget.CardView
                                 android:id="@+id/video4"
                                 android:layout_width="0dp"
-                                android:layout_height="80dp"
+                                android:layout_height="140dp"
                                 app:cardElevation="5dp"
                                 app:cardPreventCornerOverlap="true"
                                 android:layout_marginTop="5dp"
@@ -279,8 +294,14 @@
                                 app:layout_constraintLeft_toLeftOf="parent">
                             <VideoView
                                     android:id="@+id/four"
-                                    android:layout_width="match_parent"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="match_parent"/>
+                            <ImageView
+                                    android:id="@+id/fourPlay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@android:drawable/ic_media_play"
+                                    android:layout_gravity="center"/>
                         </androidx.cardview.widget.CardView>
                         <TextView
                                 android:layout_width="wrap_content"
@@ -298,11 +319,12 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="0.5"
-                            android:layout_marginRight="5dp">
+                            android:layout_marginRight="5dp"
+                            android:visibility="gone">
                         <androidx.cardview.widget.CardView
                                 android:id="@+id/video5"
                                 android:layout_width="0dp"
-                                android:layout_height="80dp"
+                                android:layout_height="140dp"
                                 app:cardElevation="5dp"
                                 app:cardPreventCornerOverlap="true"
                                 android:layout_marginTop="5dp"
@@ -312,8 +334,14 @@
                                 app:layout_constraintLeft_toLeftOf="parent">
                             <VideoView
                                     android:id="@+id/five"
-                                    android:layout_width="match_parent"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="match_parent"/>
+                            <ImageView
+                                    android:id="@+id/fivePlay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@android:drawable/ic_media_play"
+                                    android:layout_gravity="center"/>
                         </androidx.cardview.widget.CardView>
                         <TextView
                                 android:layout_width="wrap_content"
@@ -329,11 +357,12 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="0.5"
-                            android:layout_marginRight="5dp">
+                            android:layout_marginRight="5dp"
+                            android:visibility="gone">
                         <androidx.cardview.widget.CardView
                                 android:id="@+id/video6"
                                 android:layout_width="0dp"
-                                android:layout_height="80dp"
+                                android:layout_height="140dp"
                                 app:cardElevation="5dp"
                                 app:cardPreventCornerOverlap="true"
                                 android:layout_marginTop="5dp"
@@ -343,8 +372,14 @@
                                 app:layout_constraintLeft_toLeftOf="parent">
                             <VideoView
                                     android:id="@+id/six"
-                                    android:layout_width="match_parent"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="match_parent"/>
+                            <ImageView
+                                    android:id="@+id/sixPlay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@android:drawable/ic_media_play"
+                                    android:layout_gravity="center"/>
                         </androidx.cardview.widget.CardView>
                         <TextView
                                 android:layout_width="wrap_content"

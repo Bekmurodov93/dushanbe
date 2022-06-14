@@ -1,9 +1,11 @@
 package com.example.dushanbe.screens.home
 
 
+import androidx.core.os.bundleOf
 import com.example.dushanbe.R
 import com.example.dushanbe.databinding.HomeFragmentBinding
 import com.example.dushanbe.screens.MainActivity
+import com.example.dushanbe.screens.projects.PDF_NAME
 import com.example.dushanbe.utils.base.BaseFragment
 import com.example.dushanbe.utils.ui.navigate
 import dagger.hilt.android.AndroidEntryPoint
@@ -35,10 +37,14 @@ class HomeFragment : BaseFragment<HomeFragmentBinding, HomeViewModel>() {
             it.navigate(R.id.action_homeToVideos)
         }
         binding.dushanbe.setOnClickListener {
-            it.navigate(R.id.action_homeToVideos)
+                val bundle = bundleOf()
+                bundle.putString(PDF_NAME, "dushanbe.pdf")
+                it.navigate(R.id.action_homeToPdfFragment, bundle)
         }
         binding.tajikistan.setOnClickListener {
-            it.navigate(R.id.action_homeToVideos)
+            val bundle = bundleOf()
+            bundle.putString(PDF_NAME, "tajikistan.pdf")
+            it.navigate(R.id.action_homeToPdfFragment, bundle)
         }
     }
 

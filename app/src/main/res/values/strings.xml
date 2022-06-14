@@ -122,4 +122,8 @@
     <string name="video_one_title">Туристическый вазможности города Душанбе</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="about_dushanbe">О город Душанбе</string>
+    <string name="opportunity_dushanbe">Вазможности и инвестиции в г.Душанбе</string>
+    <string name="project_two">Проект 2</string>
+    <string name="project_one">Проект 1</string>
 </resources>
