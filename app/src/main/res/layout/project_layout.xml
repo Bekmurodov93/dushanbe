@@ -129,6 +129,26 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                        android:id="@+id/header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/presentation"
+                        style="@style/blackRegular16"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/logoWrapper"/>
+
+                <View
+                        android:id="@+id/divider1"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:background="@color/black"
+                        android:layout_marginTop="5dp"
+                        app:layout_constraintTop_toBottomOf="@+id/header"
+                        app:layout_constraintLeft_toLeftOf="@+id/header"
+                        app:layout_constraintRight_toRightOf="@+id/header"/>
+
 
                 <GridLayout
                         android:layout_width="match_parent"
@@ -136,7 +156,7 @@
                         android:rowCount="2"
                         android:columnCount="2"
                         android:layout_gravity="center"
-                        app:layout_constraintTop_toBottomOf="@+id/logoWrapper">
+                        app:layout_constraintTop_toBottomOf="@+id/divider1">
                     <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -144,7 +164,7 @@
                             android:layout_marginRight="5dp"
                             app:cardElevation="5dp"
                             app:cardPreventCornerOverlap="true"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginTop="15dp"
                             app:cardCornerRadius="12dp"
                             android:shadowRadius="0">
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -183,7 +203,7 @@
                             android:layout_marginLeft="5dp"
                             app:cardElevation="5dp"
                             app:cardPreventCornerOverlap="true"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginTop="15dp"
                             app:cardCornerRadius="12dp"
                             android:shadowRadius="0">
                         <androidx.constraintlayout.widget.ConstraintLayout
