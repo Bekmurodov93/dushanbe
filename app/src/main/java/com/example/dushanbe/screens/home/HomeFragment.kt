@@ -31,10 +31,10 @@ class HomeFragment : BaseFragment<HomeFragmentBinding, HomeViewModel>() {
             it.navigate(R.id.action_homeToProjects)
         }
         binding.presents.setOnClickListener {
-            it.navigate(R.id.action_homeToVideos)
+            it.navigate(R.id.action_homeToPresentaion)
         }
         binding.kodeksi.setOnClickListener {
-            it.navigate(R.id.action_homeToVideos)
+            it.navigate(R.id.action_homeToKodeks)
         }
         binding.dushanbe.setOnClickListener {
                 val bundle = bundleOf()

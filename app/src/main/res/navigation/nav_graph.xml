@@ -25,6 +25,12 @@
                 android:id="@+id/action_homeToProjects"
                 app:destination="@id/projectsFragment"/>
         <action
+                android:id="@+id/action_homeToKodeks"
+                app:destination="@id/kodeksFragment"/>
+        <action
+                android:id="@+id/action_homeToPresentaion"
+                app:destination="@id/presentationFragment"/>
+        <action
                 android:id="@+id/action_homeToPdfFragment"
                 app:destination="@id/pdfFragment"/>
 
@@ -49,7 +55,22 @@
                 android:id="@+id/action_videosToVideoFragment"
                 app:destination="@id/videoFragment"/>
     </fragment>
-
+    <fragment
+            android:id="@+id/kodeksFragment"
+            android:name="com.example.dushanbe.screens.kodeks.KodeksFragment"
+            tools:layout="@layout/kodeks_layout">
+        <action
+                android:id="@+id/action_kodeksToPdfFragment"
+                app:destination="@id/pdfFragment"/>
+    </fragment>
+    <fragment
+            android:id="@+id/presentationFragment"
+            android:name="com.example.dushanbe.screens.presentation.PresentationFragment"
+            tools:layout="@layout/presentation_layout">
+        <action
+                android:id="@+id/action_presentationToPdfFragment"
+                app:destination="@id/pdfFragment"/>
+    </fragment>
     <fragment
             android:id="@+id/projectsFragment"
             android:name="com.example.dushanbe.screens.projects.ProjectsFragment"
@@ -70,7 +91,6 @@
             android:id="@+id/videoFragment"
             android:name="com.example.dushanbe.screens.videos.VideoFragment"
             tools:layout="@layout/fragment_video">
-
     </fragment>
 
 </navigation>

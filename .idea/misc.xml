@@ -53,12 +53,14 @@
         <entry key="app/src/main/res/layout/fragment_content.xml" value="0.2296195652173913" />
         <entry key="app/src/main/res/layout/fragment_fullscreen.xml" value="0.21770833333333334" />
         <entry key="app/src/main/res/layout/fragment_intro.xml" value="0.1650238037109375" />
+        <entry key="app/src/main/res/layout/fragment_kodeks.xml" value="0.2940302530924479" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.20471014492753623" />
         <entry key="app/src/main/res/layout/fragment_pdf.xml" value="0.190625" />
         <entry key="app/src/main/res/layout/fragment_projects.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_video.xml" value="0.1734375" />
         <entry key="app/src/main/res/layout/home_fragment.xml" value="0.2934768676757813" />
         <entry key="app/src/main/res/layout/info_fragment.xml" value="0.23614092567998327" />
+        <entry key="app/src/main/res/layout/kodeks_layout.xml" value="0.259375" />
         <entry key="app/src/main/res/layout/language_fragment.xml" value="0.3327534993489584" />
         <entry key="app/src/main/res/layout/list_item.xml" value="0.21302083333333333" />
         <entry key="app/src/main/res/layout/local_patients_fragment.xml" value="0.22689208984375003" />
@@ -66,6 +68,7 @@
         <entry key="app/src/main/res/layout/patient_empty.xml" value="0.2164855072463768" />
         <entry key="app/src/main/res/layout/patient_list_item.xml" value="0.251582247969033" />
         <entry key="app/src/main/res/layout/patient_loading_item.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/presentation_layout.xml" value="0.259375" />
         <entry key="app/src/main/res/layout/project_layout.xml" value="0.32708333333333334" />
         <entry key="app/src/main/res/layout/register_death_fragment.xml" value="0.375" />
         <entry key="app/src/main/res/layout/register_fragment.xml" value="0.3461471557617188" />
