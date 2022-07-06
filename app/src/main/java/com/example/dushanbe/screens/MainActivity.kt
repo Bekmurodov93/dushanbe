@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        if (navController.currentDestination?.id == R.id.homeFragment) return
+//        if (navController.currentDestination?.id == R.id.homeFragment) return
         super.onBackPressed()
     }
 

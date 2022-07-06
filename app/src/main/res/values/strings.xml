@@ -1,14 +1,5 @@
 <resources>
-    <string name="app_name">Пациент</string>
-    <string name="welcome_txt">Добро пожаловать!</string>
-    <string name="email">Логин</string>
-    <string name="email.placeholder">example@gmail.com</string>
-    <string name="phone">Номер клиента</string>
-    <string name="phone.placeholder">+992 88 111 22 31</string>
-    <string name="otp">Код</string>
-    <string name="otp.placeholder">Ввести Код</string>
-    <string name="password">Пароль</string>
-    <string name="password.placeholder">Ввести пароль</string>
+
     <string name="login">Войти</string>
     <string name="login.btn.txt">ВОЙТИ</string>
     <string name="send.otp">Отправить код</string>

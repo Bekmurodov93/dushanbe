@@ -152,6 +152,7 @@
                             android:layout_columnWeight="0.5"
                             android:layout_marginRight="5dp"
                             app:cardElevation="5dp"
+                            android:visibility="gone"
                             app:cardPreventCornerOverlap="true"
                             android:layout_marginTop="5dp"
                             app:cardCornerRadius="12dp"
@@ -165,6 +166,7 @@
                                     android:id="@+id/videoLogo"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:src="@drawable/icon_video"
                                     app:layout_constraintLeft_toLeftOf="parent"
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:layout_constraintBottom_toBottomOf="parent"/>
@@ -190,6 +192,7 @@
                             android:layout_columnWeight="0.5"
                             android:layout_marginLeft="5dp"
                             app:cardElevation="5dp"
+                            android:visibility="gone"
                             app:cardPreventCornerOverlap="true"
                             android:layout_marginTop="5dp"
                             app:cardCornerRadius="12dp"
@@ -203,6 +206,7 @@
                                     android:id="@+id/projectLogo"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:src="@drawable/icon_project"
                                     app:layout_constraintLeft_toLeftOf="parent"
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:layout_constraintBottom_toBottomOf="parent"/>
@@ -220,84 +224,6 @@
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
-
-
-                    <androidx.cardview.widget.CardView
-                            android:id="@+id/presents"
-                            android:layout_width="0dp"
-                            android:layout_height="80dp"
-                            android:layout_columnWeight="0.5"
-                            android:layout_marginRight="5dp"
-                            app:cardElevation="5dp"
-                            app:cardPreventCornerOverlap="true"
-                            android:layout_marginTop="5dp"
-                            app:cardCornerRadius="12dp"
-                            android:shadowRadius="0">
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/btn_back"
-                                android:padding="10dp">
-                            <ImageView
-                                    android:id="@+id/presentLogo"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    app:layout_constraintLeft_toLeftOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintBottom_toBottomOf="parent"/>
-                            <TextView
-                                    android:id="@+id/presentText"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/presentation"
-                                    android:textAllCaps="true"
-                                    android:layout_marginLeft="20dp"
-                                    style="@style/headlineWhiteRegular16"
-                                    app:layout_constraintLeft_toRightOf="@+id/presentLogo"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintBottom_toBottomOf="parent"/>
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                            android:id="@+id/kodeksi"
-                            android:layout_width="0dp"
-                            android:layout_height="80dp"
-                            android:layout_columnWeight="0.5"
-                            android:layout_marginLeft="5dp"
-                            app:cardElevation="5dp"
-                            app:cardPreventCornerOverlap="true"
-                            android:layout_marginTop="5dp"
-                            app:cardCornerRadius="12dp"
-                            android:shadowRadius="0">
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/btn_back"
-                                android:padding="10dp">
-                            <ImageView
-                                    android:id="@+id/kodeksLogo"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    app:layout_constraintLeft_toLeftOf="parent"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintBottom_toBottomOf="parent"/>
-                            <TextView
-                                    android:id="@+id/kodeksText"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/kodeks"
-                                    android:textAllCaps="true"
-                                    android:layout_marginLeft="20dp"
-                                    style="@style/headlineWhiteRegular16"
-                                    app:layout_constraintLeft_toRightOf="@+id/kodeksLogo"
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintBottom_toBottomOf="parent"/>
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </androidx.cardview.widget.CardView>
-
 
                     <androidx.cardview.widget.CardView
                             android:id="@+id/dushanbe"
@@ -319,6 +245,7 @@
                                     android:id="@+id/dushanbeLogo"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:src="@drawable/icon_dushanbe"
                                     app:layout_constraintLeft_toLeftOf="parent"
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:layout_constraintBottom_toBottomOf="parent"/>
@@ -357,6 +284,7 @@
                                     android:id="@+id/tajikistanLogo"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:src="@drawable/icon_tajikistan"
                                     app:layout_constraintLeft_toLeftOf="parent"
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:layout_constraintBottom_toBottomOf="parent"/>
@@ -373,6 +301,84 @@
                                     app:layout_constraintBottom_toBottomOf="parent"/>
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/presents"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_columnWeight="0.5"
+                            android:layout_marginRight="5dp"
+                            app:cardElevation="5dp"
+                            app:cardPreventCornerOverlap="true"
+                            android:layout_marginTop="5dp"
+                            app:cardCornerRadius="12dp"
+                            android:shadowRadius="0">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/btn_back"
+                                android:padding="10dp">
+                            <ImageView
+                                    android:id="@+id/presentLogo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/icon_preseitation"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="parent"/>
+                            <TextView
+                                    android:id="@+id/presentText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/presentation"
+                                    android:textAllCaps="true"
+                                    android:layout_marginLeft="20dp"
+                                    style="@style/headlineWhiteRegular16"
+                                    app:layout_constraintLeft_toRightOf="@+id/presentLogo"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:id="@+id/kodeksi"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_columnWeight="0.5"
+                            android:layout_marginLeft="5dp"
+                            app:cardElevation="5dp"
+                            app:cardPreventCornerOverlap="true"
+                            android:layout_marginTop="5dp"
+                            app:cardCornerRadius="12dp"
+                            android:shadowRadius="0">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/btn_back"
+                                android:padding="10dp">
+                            <ImageView
+                                    android:id="@+id/kodeksLogo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/icon_zakonodatelstvopng"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="parent"/>
+                            <TextView
+                                    android:id="@+id/kodeksText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/kodeks"
+                                    android:textAllCaps="true"
+                                    android:layout_marginLeft="20dp"
+                                    style="@style/headlineWhiteRegular16"
+                                    app:layout_constraintLeft_toRightOf="@+id/kodeksLogo"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
                 </GridLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
