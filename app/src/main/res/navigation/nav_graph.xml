@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nav_graph"
+        app:startDestination="@id/homeFragment">
+    <action
+            android:id="@+id/action_global_toLanguage"
+            app:destination="@id/languageFragment" />
+    <action
+            android:id="@+id/action_global_toHome"
+            app:destination="@id/homeFragment" />
+
+    <fragment
+            android:id="@+id/homeFragment"
+            android:name="com.example.dushanbe.screens.home.HomeFragment"
+            tools:layout="@layout/home_fragment">
+        <action
+                android:id="@+id/action_homeToRegister"
+                app:destination="@id/registerFragment"/>
+        <action
+                android:id="@+id/action_homeToVideos"
+                app:destination="@id/videosFragment"/>
+        <action
+                android:id="@+id/action_homeToProjects"
+                app:destination="@id/projectsFragment"/>
+        <action
+                android:id="@+id/action_homeToKodeks"
+                app:destination="@id/kodeksFragment"/>
+        <action
+                android:id="@+id/action_homeToPresentaion"
+                app:destination="@id/presentationFragment"/>
+        <action
+                android:id="@+id/action_homeToPdfFragment"
+                app:destination="@id/pdfFragment"/>
+
+    </fragment>
+
+
+    <fragment
+            android:id="@+id/languageFragment"
+            android:name="com.example.dushanbe.screens.language.LanguageFragment"
+            tools:layout="@layout/login_fragment">
+        <action
+                android:id="@+id/action_loginToHome"
+                app:destination="@id/homeFragment"/>
+    </fragment>
+
+
+    <fragment
+            android:id="@+id/videosFragment"
+            android:name="com.example.dushanbe.screens.videos.VideosFragment"
+            tools:layout="@layout/videos_layout">
+        <action
+                android:id="@+id/action_videosToVideoFragment"
+                app:destination="@id/videoFragment"/>
+    </fragment>
+    <fragment
+            android:id="@+id/kodeksFragment"
+            android:name="com.example.dushanbe.screens.kodeks.KodeksFragment"
+            tools:layout="@layout/kodeks_layout">
+        <action
+                android:id="@+id/action_kodeksToPdfFragment"
+                app:destination="@id/pdfFragment"/>
+    </fragment>
+    <fragment
+            android:id="@+id/presentationFragment"
+            android:name="com.example.dushanbe.screens.presentation.PresentationFragment"
+            tools:layout="@layout/presentation_layout">
+        <action
+                android:id="@+id/action_presentationToPdfFragment"
+                app:destination="@id/pdfFragment"/>
+    </fragment>
+    <fragment
+            android:id="@+id/projectsFragment"
+            android:name="com.example.dushanbe.screens.projects.ProjectsFragment"
+            tools:layout="@layout/project_layout">
+        <action
+                android:id="@+id/action_projectsToPdfFragment"
+                app:destination="@id/pdfFragment"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/pdfFragment"
+            android:name="com.example.dushanbe.screens.projects.PdfFragment"
+            tools:layout="@layout/fragment_pdf">
+
+    </fragment>
+
+    <fragment
+            android:id="@+id/videoFragment"
+            android:name="com.example.dushanbe.screens.videos.VideoFragment"
+            tools:layout="@layout/fragment_video">
+    </fragment>
+
+</navigation>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".screens.info.InfoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:background="@color/bg_color">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                app:layout_constraintTop_toTopOf="parent"
+                app:navigationIcon="@drawable/ic_back_texted">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        style="@style/titleBlackRegular20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bottom.help"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.2"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.48" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/contentFirstLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <TextView
+                    android:id="@+id/mainDoctorTitle"
+                    style="@style/blackRegular13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Главный врач, Давлатова Гульноза"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                    android:id="@+id/mainDoctorInfo"
+                    style="@style/greyRegular13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Таджикистан, Душанбе, р. И. Сомони, районная Поликлиника №7 им. А. Сино"
+                    app:layout_constraintTop_toBottomOf="@+id/mainDoctorTitle" />
+
+            <TextView
+                    android:id="@+id/mainDoctorPhone"
+                    style="@style/blueRegular16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+992 918653366"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/mainDoctorInfo" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/ic_line"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/contentFirstLine" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/contentSecondLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/contentFirstLine">
+
+            <TextView
+                    android:id="@+id/subDoctorTitle"
+                    style="@style/blackRegular13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Главный врач, Давлатова Гульноза"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                    android:id="@+id/subDoctorInfo"
+                    style="@style/greyRegular13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Таджикистан, Душанбе, р. И. Сомони, районная Поликлиника №7 им. А. Сино"
+                    app:layout_constraintTop_toBottomOf="@+id/subDoctorTitle" />
+
+            <TextView
+                    android:id="@+id/subDoctorPhone"
+                    style="@style/blueRegular16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+992 918653366"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/subDoctorInfo" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/ic_line"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/contentSecondLine" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/contentThirdLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/contentSecondLine">
+
+            <TextView
+                    android:id="@+id/mainPharmacyTitle"
+                    style="@style/blackRegular13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Главный врач, Давлатова Гульноза"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                    android:id="@+id/mainPharmacyInfo"
+                    style="@style/greyRegular13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Таджикистан, Душанбе, р. И. Сомони, районная Поликлиника №7 им. А. Сино"
+                    app:layout_constraintTop_toBottomOf="@+id/mainPharmacyTitle" />
+
+            <TextView
+                    android:id="@+id/mainPharmacyPhone"
+                    style="@style/blueRegular16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+992 918653366"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/mainPharmacyInfo" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

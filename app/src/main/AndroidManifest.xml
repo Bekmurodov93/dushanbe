@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        package="com.example.dushanbe">
+
+    <uses-sdk tools:overrideLibrary="com.sanojpunchihewa.updatemanager,                                     androidx.camera.camera2,androidx.camera.view,                                     androidx.camera.lifecycle,androidx.camera.core" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+            android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+            android:installLocation="internalOnly" />
+    <uses-permission
+            android:name="android.permission.READ_EXTERNAL_STORAGE"
+            android:installLocation="internalOnly" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" /> <!-- Features -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+            android:name="android.hardware.camera.flash"
+            android:required="false" />
+    <uses-feature
+            android:name="android.hardware.camera.autofocus"
+            android:required="false" />
+    <uses-feature
+            android:name="android.hardware.fingerprint"
+            android:required="false" />
+
+    <application
+            android:name="com.example.DushanbeApp"
+            android:allowBackup="true"
+            android:fullBackupContent="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/dushanbe"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:usesCleartextTraffic="true"
+            android:theme="@style/Theme.ConsultantAlif">
+        <activity
+                android:name="com.example.dushanbe.screens.welcome.WelcomeActivity"
+                android:exported="true"
+                android:screenOrientation="landscape"/>
+        <activity
+                android:name="com.example.dushanbe.screens.MainActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:screenOrientation="landscape"
+                android:exported="true"
+                android:windowSoftInputMode="adjustResize"
+                android:theme="@style/Theme.ConsultantAlif.Fullscreen"
+                android:launchMode="singleTop"/>
+        <activity
+                android:name="com.example.dushanbe.screens.SplashActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:exported="true"
+                android:screenOrientation="landscape"
+                android:theme="@style/Theme.ConsultantAlif">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
