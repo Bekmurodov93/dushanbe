@@ -32,9 +32,9 @@
             android:name="com.example.DushanbeApp"
             android:allowBackup="true"
             android:fullBackupContent="true"
-            android:icon="@mipmap/ic_launcher"
-            android:label="@string/dushanbe"
-            android:roundIcon="@mipmap/ic_launcher_round"
+            android:icon="@drawable/icon"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/icon"
             android:supportsRtl="true"
             android:usesCleartextTraffic="true"
             android:theme="@style/Theme.ConsultantAlif">

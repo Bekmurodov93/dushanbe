@@ -1,5 +1,5 @@
 <resources>
-
+    <string name="app_name" translatable="false">Инвестиционные возможности города Душанбе</string>
     <string name="login">Войти</string>
     <string name="login.btn.txt">ВОЙТИ</string>
     <string name="send.otp">Отправить код</string>
@@ -107,7 +107,7 @@
     <string name="videos">Видеоролики</string>
     <string name="project">Проекты</string>
     <string name="presentation">Презентатции</string>
-    <string name="kodeks">Кодекси</string>
+    <string name="kodeks">Законодательство</string>
     <string name="dushanbe">о душанбе</string>
     <string name="tajikistan">о таджикистан</string>
     <string name="video_one_title">Туристическый вазможности города Душанбе</string>

@@ -46,7 +46,6 @@ class VideoFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val rawFile=requireContext().resources.getIdentifier(param1,"raw",requireContext().packageName)
         val localUri = Uri.parse("android.resource://" + requireContext().packageName + "/" + rawFile)
-        Log.v("tag","$localUri")
         video.setVideoURI(localUri)
         val controllerOne= MediaController(requireActivity())
         video.setMediaController(controllerOne)
