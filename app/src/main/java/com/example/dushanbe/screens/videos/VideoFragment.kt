@@ -1,5 +1,7 @@
 package com.example.dushanbe.screens.videos
 
+import android.content.Context
+import android.media.AudioManager
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
@@ -8,6 +10,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.MediaController
+import androidx.core.content.ContextCompat.getSystemService
 import com.example.dushanbe.R
 import kotlinx.android.synthetic.main.fragment_video.*
 
@@ -51,6 +54,14 @@ class VideoFragment : Fragment() {
         video.setMediaController(controllerOne)
         controllerOne.setAnchorView(video)
         video.start()
+        val audioManager = requireActivity().getSystemService(Context.AUDIO_SERVICE) as AudioManager
+        btnUp.setOnClickListener {
+            audioManager.adjustVolume(AudioManager.ADJUST_RAISE, AudioManager.FLAG_PLAY_SOUND)
+        }
+       btnDown.setOnClickListener {
+           audioManager.adjustVolume(AudioManager.ADJUST_LOWER, AudioManager.FLAG_PLAY_SOUND)
+       }
+
     }
 
     companion object {
