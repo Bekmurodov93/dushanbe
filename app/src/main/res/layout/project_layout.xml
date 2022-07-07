@@ -133,7 +133,7 @@
                         android:id="@+id/header"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/presentation"
+                        android:text="@string/project"
                         style="@style/blackRegular16"
                         android:layout_marginTop="20dp"
                         app:layout_constraintLeft_toLeftOf="parent"
@@ -229,6 +229,7 @@
 
 
                     <androidx.cardview.widget.CardView
+                            android:id="@+id/three"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="0.5"
@@ -237,7 +238,7 @@
                             app:cardPreventCornerOverlap="true"
                             android:layout_marginTop="5dp"
                             app:cardCornerRadius="12dp"
-                            android:visibility="gone"
+                            android:visibility="visible"
                             android:shadowRadius="0">
                         <androidx.constraintlayout.widget.ConstraintLayout
                                 android:layout_width="match_parent"
@@ -248,7 +249,7 @@
                                     android:id="@+id/three3"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/presentation"
+                                    android:text="@string/project_3"
                                     android:textAllCaps="true"
                                     style="@style/headlineWhiteRegular16"
                                     app:layout_constraintLeft_toLeftOf="parent"
@@ -260,6 +261,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                            android:id="@+id/four"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="0.5"
@@ -268,7 +270,7 @@
                             app:cardPreventCornerOverlap="true"
                             android:layout_marginTop="5dp"
                             app:cardCornerRadius="12dp"
-                            android:visibility="gone"
+                            android:visibility="visible"
                             android:shadowRadius="0">
                         <androidx.constraintlayout.widget.ConstraintLayout
                                 android:layout_width="match_parent"
@@ -279,7 +281,7 @@
                                     android:id="@+id/four4"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/kodeks"
+                                    android:text="@string/project_4"
                                     android:textAllCaps="true"
                                     android:layout_marginLeft="20dp"
                                     style="@style/headlineWhiteRegular16"
@@ -293,6 +295,7 @@
 
 
                     <androidx.cardview.widget.CardView
+                            android:id="@+id/five"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="0.5"
@@ -301,7 +304,7 @@
                             app:cardPreventCornerOverlap="true"
                             android:layout_marginTop="5dp"
                             app:cardCornerRadius="12dp"
-                            android:visibility="gone"
+                            android:visibility="visible"
                             android:shadowRadius="0">
                         <androidx.constraintlayout.widget.ConstraintLayout
                                 android:layout_width="match_parent"
@@ -312,7 +315,7 @@
                                     android:id="@+id/five5"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/dushanbe"
+                                    android:text="@string/project_5"
                                     android:textAllCaps="true"
                                     style="@style/headlineWhiteRegular16"
                                     app:layout_constraintLeft_toLeftOf="parent"
@@ -324,12 +327,13 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                            android:id="@+id/sixWrapper"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="0.5"
                             android:layout_marginLeft="5dp"
                             app:cardElevation="5dp"
-                            android:visibility="gone"
+                            android:visibility="visible"
                             app:cardPreventCornerOverlap="true"
                             android:layout_marginTop="5dp"
                             app:cardCornerRadius="12dp"
@@ -343,7 +347,7 @@
                                     android:id="@+id/six"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/tajikistan"
+                                    android:text="@string/project_6"
                                     android:textAllCaps="true"
                                     style="@style/headlineWhiteRegular16"
                                     app:layout_constraintLeft_toLeftOf="parent"

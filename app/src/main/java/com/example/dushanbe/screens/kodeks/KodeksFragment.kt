@@ -36,5 +36,25 @@ class KodeksFragment : BaseFragment<KodeksLayoutBinding,KodeksViewModel>() {
             bundle.putString(PDF_NAME, "kodeks_two.pdf")
             it.navigate(R.id.action_kodeksToPdfFragment, bundle)
         }
+        binding.threeWrapper.setOnClickListener {
+            val bundle = bundleOf()
+            bundle.putString(PDF_NAME, "z_3_ru.pdf")
+            it.navigate(R.id.action_kodeksToPdfFragment, bundle)
+        }
+        binding.fourWrapper.setOnClickListener {
+            val bundle = bundleOf()
+            bundle.putString(PDF_NAME, "z_4_ru.pdf")
+            it.navigate(R.id.action_kodeksToPdfFragment, bundle)
+        }
+        binding.fiveWrapper.setOnClickListener {
+            val bundle = bundleOf()
+            bundle.putString(PDF_NAME, "z_5_ru.pdf")
+            it.navigate(R.id.action_kodeksToPdfFragment, bundle)
+        }
+        binding.sixWrapper.setOnClickListener {
+            val bundle = bundleOf()
+            bundle.putString(PDF_NAME, "z_6_ru.pdf")
+            it.navigate(R.id.action_kodeksToPdfFragment, bundle)
+        }
     }
 }

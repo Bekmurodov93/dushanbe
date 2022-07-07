@@ -35,6 +35,26 @@ class ProjectsFragment : BaseFragment<ProjectLayoutBinding, ProjectsViewModel>()
             bundle.putString(PDF_NAME, "project_two.pdf")
             it.navigate(R.id.action_projectsToPdfFragment, bundle)
         }
+        binding.three.setOnClickListener {
+            val bundle = bundleOf()
+            bundle.putString(PDF_NAME, "3_ru.pdf")
+            it.navigate(R.id.action_projectsToPdfFragment, bundle)
+        }
+        binding.four.setOnClickListener {
+            val bundle = bundleOf()
+            bundle.putString(PDF_NAME, "4_ru.pdf")
+            it.navigate(R.id.action_projectsToPdfFragment, bundle)
+        }
+        binding.five.setOnClickListener {
+            val bundle = bundleOf()
+            bundle.putString(PDF_NAME, "5_ru.pdf")
+            it.navigate(R.id.action_projectsToPdfFragment, bundle)
+        }
+        binding.sixWrapper.setOnClickListener {
+            val bundle = bundleOf()
+            bundle.putString(PDF_NAME, "6_ru.pdf")
+            it.navigate(R.id.action_projectsToPdfFragment, bundle)
+        }
 
     }
 }
