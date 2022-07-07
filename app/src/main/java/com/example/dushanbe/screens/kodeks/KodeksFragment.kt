@@ -14,11 +14,7 @@ class KodeksFragment : BaseFragment<KodeksLayoutBinding,KodeksViewModel>() {
     override fun getViewModelClass()=KodeksViewModel::class.java
 
     override fun getViewBinding()= KodeksLayoutBinding.inflate(layoutInflater)
-    override fun observeData() {
-        super.observeData()
-
-
-    }
+    override fun observeData() { super.observeData() }
 
     override fun setUpViews() {
         super.setUpViews()
